@@ -33,10 +33,10 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-m2-
 
-      # Step 4: Navigate to the correct directory and build the project
+      # Step 4: Build the project
       - name: Build with Maven
         run: |
-          cd SDA_Project/SDA_Project
+          cd SDA_Project
           mvn clean verify
 
       # Step 5: Run SonarQube analysis
@@ -44,7 +44,7 @@ jobs:
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         run: |
-          cd SDA_Project/SDA_Project
+          cd SDA_Project
           mvn sonar:sonar \
               -Dsonar.projectKey=your_project_key \
               -Dsonar.organization=your_organization \
