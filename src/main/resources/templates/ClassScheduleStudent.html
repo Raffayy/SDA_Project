@@ -36,6 +36,27 @@
             padding: 40px;
             border-radius: 10px;
         }
+        .home-button {
+            background-color: #23a6d5;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .home-button:hover {
+            background-color: #1b8ab0;
+        }
+
+        .button-container {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+
     </style>
 </head>
 <body>
@@ -44,5 +65,19 @@
     <p>Welcome to the new page. Customize this template as needed.</p>
     <!-- Add more content here -->
 </div>
+<div style="position: fixed; top: 20px; right: 20px; z-index: 1000;">
+    <a href="/StudentHome" style="
+        background-color: #23a6d5;
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+        transition: background-color 0.3s;">
+        Home
+    </a>
+</div>
+
+
 </body>
 </html>

@@ -106,12 +106,35 @@
             text-decoration: none;
             cursor: pointer;
         }
+
+        .home-button {
+            background-color: #23a6d5;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .home-button:hover {
+            background-color: #1b8ab0;
+        }
+
+        .button-container {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
     </style>
 </head>
 <body>
+
 <nav>
     <a href="/StudentHome/Marketplace/AddItem">Add Item</a>
     <a href="/StudentHome/Marketplace/DeleteItem">Delete Item</a>
+    <a href="/StudentHome">Home</a>
     <div id="rightButtons">
         <a href="/StudentHome/Logout">Log Out</a>
     </div>
@@ -137,6 +160,7 @@
     <span class="close">&times;</span>
     <img class="modal-content" id="img01">
 </div>
+
 
 <script>
     var modal = document.getElementById("myModal");
@@ -164,5 +188,7 @@
         }
     }
 </script>
+
+
 </body>
 </html>

@@ -64,9 +64,32 @@
             left: 5%;
         }
 
+        .home-button {
+            background-color: #23a6d5;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .home-button:hover {
+            background-color: #1b8ab0;
+        }
+
+        .button-container {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+
     </style>
 </head>
 <body>
+
+
 
 <h1>Welcome to E-Learning</h1>
 <div class="container1">
@@ -119,8 +142,22 @@
                 </form>
             </td>
         </tr>
+
         </tbody>
     </table>
+</div>
+
+<div style="position: fixed; top: 20px; right: 20px; z-index: 1000;">
+    <a href="/StudentHome" style="
+        background-color: #23a6d5;
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+        transition: background-color 0.3s;">
+        Home
+    </a>
 </div>
 </body>
 </html>
